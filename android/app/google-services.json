@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "679406882032",
+    "project_id": "manage-your-stock-efb67",
+    "storage_bucket": "manage-your-stock-efb67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679406882032:android:0a5fdc8f096e05e0560635",
+        "android_client_info": {
+          "package_name": "com.AO.salesandstockmanagement_app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679406882032-lljfiatm5jutpdaf2e60mtrq6d5bgioi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6PHFLgiEBu6-JtpFmLZWKjURUVsqdSEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679406882032-lljfiatm5jutpdaf2e60mtrq6d5bgioi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
