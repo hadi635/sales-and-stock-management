@@ -8,7 +8,6 @@ import 'package:salesandstockmanagement_app1/offer_screen.dart';
 import 'package:salesandstockmanagement_app1/offerlist.dart';
 import 'package:salesandstockmanagement_app1/productlist.dart';
 
-
 class salesmanhomescreen extends StatefulWidget {
   static const String screenroute = 'salesmanhome_screen';
 
@@ -124,8 +123,8 @@ class _salesmanhomescreenState extends State<salesmanhomescreen> {
                 ),
               ],
             ),
-          ),  
-           InkWell(
+          ),
+          InkWell(
             onTap: () {
               Navigator.pushNamed(context, OrderScreen.screenroute);
             },
@@ -188,4 +187,9 @@ class _salesmanhomescreenState extends State<salesmanhomescreen> {
                 ),
               ],
             ),
-          )]));}}
+          )
+        ],
+      ),
+    );
+  }
+}

@@ -1,9 +1,9 @@
+// ignore_for_file: file_names, camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:salesandstockmanagement_app1/client.dart';
-import 'Stock_screen.dart';
-
 
 class clientscreen extends StatefulWidget {
   static const screenroute = 'Client_screen';
@@ -228,9 +228,12 @@ class _clientscreenState extends State<clientscreen> {
         ],
       ),
       body: SafeArea(
-       child: StreamBuilder<QuerySnapshot>(
+        child: StreamBuilder<QuerySnapshot>(
           stream: isSearching
-              ? _firestore.collection('Clients').where('name', isEqualTo: client).snapshots()
+              ? _firestore
+                  .collection('Clients')
+                  .where('name', isEqualTo: client)
+                  .snapshots()
               : _firestore.collection('Clients').snapshots(),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {

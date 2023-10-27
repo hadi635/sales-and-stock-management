@@ -23,7 +23,6 @@ import 'package:salesandstockmanagement_app1/screens/signup_screen.dart';
 import 'package:salesandstockmanagement_app1/screens/welcome_screen.dart';
 import 'package:salesandstockmanagement_app1/spplier.dart';
 
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // تضمن تهيئة ربط Flutter مع الجهاز
   await Firebase.initializeApp(); // قم بتهيئة Firebase
@@ -48,16 +47,17 @@ class MyApp extends StatelessWidget {
         login.screenroute: (context) => login(),
         signup.screenroute: (context) => signup(),
         homescreen.screenroute: (context) => homescreen(),
-        Stockscreen.screenroute: (context) => Stockscreen(clientId: '',),
-        clientscreen.screenroute: (context) => clientscreen(),
-        SupplierScreen.screenroute: (context) => SupplierScreen(),
-       
-        offerscreen.screenroute: (context) => offerscreen(),
-        reportscreen.screenroute: (context) => reportscreen(),
+        Stockscreen.screenroute: (context) => const Stockscreen(
+              clientId: '',
+            ),
+        clientscreen.screenroute: (context) => const clientscreen(),
+        SupplierScreen.screenroute: (context) => const SupplierScreen(),
+        offerscreen.screenroute: (context) => const offerscreen(),
+        reportscreen.screenroute: (context) => const reportscreen(),
         empolyehomescreen.screenroute: (context) => empolyehomescreen(),
         salesmanhomescreen.screenroute: (context) => salesmanhomescreen(),
         ProductListScreen.screenroute: (context) => ProductListScreen(),
-        Offerlist.screenroute: (context) => Offerlist(),
+        Offerlist.screenroute: (context) => const offerscreen(),
         supplierDetailsScreen.screenroute: (context) => supplierDetailsScreen(
               supplierId: '123',
               supplierName: 'clientName',
@@ -79,11 +79,8 @@ class MyApp extends StatelessWidget {
               productbuyprice: 50,
               productname: 'Product Name',
               productqty: 100,
-              
-              
-              
               productselprice: 70,
-              productdescription:'aaa',
+              productdescription: 'aaa',
             ),
       },
     );
