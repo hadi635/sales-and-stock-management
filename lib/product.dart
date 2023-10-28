@@ -4,7 +4,7 @@ class Productdetailsscreen extends StatelessWidget {
   static const screenroute = 'productdetails_screen';
   final String productID;
   final String productname;
-   int productqty;
+  int productqty;
   final int productbuyprice;
   final int productselprice;
   final String productdescription; // إضافة متغير لوصف المنتج

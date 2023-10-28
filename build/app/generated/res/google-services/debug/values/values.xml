@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">679406882032-lljfiatm5jutpdaf2e60mtrq6d5bgioi.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">679406882032</string>
+    <string name="google_api_key" translatable="false">AIzaSyD6PHFLgiEBu6-JtpFmLZWKjURUVsqdSEg</string>
+    <string name="google_app_id" translatable="false">1:679406882032:android:0a5fdc8f096e05e0560635</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD6PHFLgiEBu6-JtpFmLZWKjURUVsqdSEg</string>
+    <string name="google_storage_bucket" translatable="false">manage-your-stock-efb67.appspot.com</string>
+    <string name="project_id" translatable="false">manage-your-stock-efb67</string>
+</resources>
